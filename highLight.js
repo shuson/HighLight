@@ -1,6 +1,6 @@
-function hightLight(searchInput, resultDiv){
-	var result = $("#"+resultDiv).html();
-	var keyword = $("#"+searchInput).val();
+function highLight(searchInput, resultDiv){
+	var result = document.getElementById(resultDiv).innerHTML;
+	var keyword = document.getElementById(searchInput).value;
 			
 	if(keyword){
 		var regx = new RegExp(keyword,'gi');
@@ -16,7 +16,7 @@ function hightLight(searchInput, resultDiv){
 		});
 		}
 	
-		$("#"+resultDiv).html(result);
+		document.getElementById(resultDiv).innerHTML = result;
 
 	function replaceAll(find, replace, str) {
 		 return str.replace(new RegExp(find, 'g'), replace);
