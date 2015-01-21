@@ -18,14 +18,14 @@ function highLight(searchInput, resultDiv){
 	
 		document.getElementById(resultDiv).innerHTML = result;
 
-	function replaceAll(find, replace, str) {
-		 return str.replace(new RegExp(find, 'g'), replace);
+	function replaceAll(orig, replace, str) {
+		 return str.replace(new RegExp(orig, 'g'), replace);
 	}
 
-	function removeDuplicate(a) {
-		var seen = {};
-		return a.filter(function(item) {
-			return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+	function removeDuplicate(arr) {
+		var temp = {};
+		return arr.filter(function(item) {
+			return temp.hasOwnProperty(item) ? false : (temp[item] = true);
 		});
 	}
 }
