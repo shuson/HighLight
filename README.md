@@ -4,7 +4,11 @@ HighLight is a javascript tool to high light the keyword in the search result
 ### Usage
 ```
    <html lang="en">
-      <script src="highLight.js"> </script>
+      <head>
+         <script src="highLight.js"> </script>
+         <link rel="stylesheet" type="text/css" href="style.css" />
+      <head>
+      
       <body>
         <input id="keyword" type="text"></input><button type="button" onclick="highLight()">Search</button>
         <div id="result">
